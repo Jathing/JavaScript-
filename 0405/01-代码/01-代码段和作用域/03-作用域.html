@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      // 全局变量作用范围是全局
+      // 局部变量作用范围是函数
+      var a = 100;
+      function fn() {
+        console.log(a);
+      }
+      fn();
+      function gn() {
+        var a = 200;
+        console.log(a);
+      }
+      gn();
+      console.log(a);
+    </script>
+  </body>
+</html>

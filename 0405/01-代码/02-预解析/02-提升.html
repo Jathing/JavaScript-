@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- 1. 对于使用var关键字声明的全局变量会初始化 提升(提升-初始化) 提升到代码段的最前面
+        2 对于使用var声明的局部变量来说 提升到函数的最前面
+        3. 使用function声明的函数 会携带变量一起提升 整个函数做了提升
+    
+    -->
+    <!-- <script>
+      console.log(a); //undefined
+      var a = 1;
+    </script>
+    <script>
+      var a;
+      console.log(a); //1
+      a = 1;
+      console.log(a); //1
+    </script> -->
+    <!-- <script>
+      // let声明的变量有提升但没有初始化
+      console.log(a); //Uncaught ReferenceError: Cannot access 'a' before initialization
+      let a = 1;
+    </script> -->
+    <!-- <script>
+      // var a = 5;
+      function fn() {
+        console.log(a); //und
+        // console.log(a); //5
+        var a = 10;
+      }
+      fn(); 
+    </script> -->
+
+    <script>
+      // 为什么整体都提升了? 函数不仅提升函数名,整个函数都提升了
+      console.log(fn);
+      function fn() {
+        console.log(123);
+      }
+    </script>
+  </body>
+</html>

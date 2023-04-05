@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- 什么是代码断 -->
+    <!-- 一个script就是一个代码断 -->
+
+    <script>
+      // console.log(a); //Uncaught ReferenceError: a is not defined
+      var b = 2;
+    </script>
+
+    <script>
+      var a = 1;
+      console.log(a); //1
+      console.log(b); //2
+    </script>
+
+    <!-- 代码段的特点
+    1. 代码段之间互不影响 一个代码段中的错误 不会影响到其他代码段
+    2. 上面代码的定义的变量 会被下面的代码所使用
+    3. 下面代码的定义的变量 不会被上面的代码所使用
+    4. 一个页面中 可以有多个代码段 每一个js文件也是一个代码段
+    -->
+  </body>
+</html>

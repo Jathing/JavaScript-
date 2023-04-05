@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      gn();
+      var gn = function () {
+        console.log('这是一个函数');
+      };
+    </script>
+
+    <script>
+      var gn; // und
+      gn(); // und()
+      gn = function () {
+        console.log('这是一个函数');
+      };
+
+      // 如果你碰到的 xxx is a function
+      // 你应该反思 自己调用的那个位置 是 变量还是函数
+      // 关注点:调用位置是否是一个函数
+    </script>
+  </body>
+</html>
